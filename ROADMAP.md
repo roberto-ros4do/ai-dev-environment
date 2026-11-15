@@ -1,80 +1,124 @@
 # Roadmap — AI Dev Environment
 
-Este roadmap orienta minha jornada de aprendizado e melhoria do fluxo de desenvolvimento com IA. **Não é um cronograma rígido**: as etapas dependem das necessidades reais do trabalho e da estabilidade do projeto profissional.
+> Jornada prática de aprendizado em AI Engineering por meio da evolução de um ambiente profissional de desenvolvimento de software assistido por IA.
 
-Legenda: `[ ]` não iniciado · `[x]` concluído.
+## Objetivo
+
+Aprender e aplicar conceitos de AI Engineering enquanto aprimoro progressivamente meu fluxo de desenvolvimento com inteligência artificial.
+
+O foco é investigar problemas reais, compreender as tecnologias envolvidas, experimentar soluções e documentar os aprendizados.
+
+Este roadmap representa o planejamento da jornada. As experiências realizadas, dificuldades e descobertas serão registradas no diretório [`journal/`](journal/).
+
+## Contexto inicial
+
+O ambiente de desenvolvimento utiliza:
+
+- **Editor:** Visual Studio Code.
+- **Assistente de IA:** Claude, inicialmente utilizado por meio de chat com acesso ao projeto.
+- **Tecnologias do sistema:** PHP, JavaScript e MySQL.
+- **Execução:** ambiente local.
+- **Testes:** predominantemente manuais, com auditorias orientadas por cenários e perfis de usuários.
+
+O sistema profissional está na fase final de preparação para produção, após um processo de refatoração e auditoria.
+
+A prioridade é concluir as atividades pendentes antes de realizar mudanças significativas no ambiente de desenvolvimento.
+
+**Princípio central:** compreender, planejar e validar antes de modificar.
+
+---
 
 ## Etapa 0 — Diagnóstico e linha de base
 
-- [ ] Descrever o fluxo atual de especificação, implementação, revisão e auditoria.
-- [ ] Identificar gargalos, retrabalho, riscos e oportunidades de melhoria.
-- [ ] Definir critérios simples de comparação (tempo, correções, intervenções e cobertura de testes).
-- [ ] Registrar a primeira entrada do diário com observações reais.
+**Objetivo:** compreender o funcionamento atual do ambiente e identificar oportunidades de melhoria sem alterar o projeto.
 
-**Resultado esperado:** uma referência inicial para avaliar mudanças futuras, sem modificar o projeto profissional nesta etapa.
+### Atividades
 
-## Etapa 1 — Claude Code e Context Engineering
+- [ ] Confirmar o modo de integração do Claude e as ferramentas disponíveis.
+- [ ] Mapear a estrutura geral do projeto e suas principais responsabilidades.
+- [ ] Identificar comandos, ferramentas, Git, banco de dados e ambientes.
+- [ ] Documentar o fluxo atual de implementação de funcionalidades.
+- [ ] Documentar o fluxo atual de auditoria e testes.
+- [ ] Analisar os resultados da auditoria em andamento.
+- [ ] Identificar dificuldades recorrentes e oportunidades de automação.
+- [ ] Definir limites de acesso, segurança e aprovação.
+- [ ] Estabelecer indicadores iniciais para futuras comparações.
 
-- [ ] Estudar como o Claude Code lê e modifica projetos.
-- [ ] Planejar uma migração gradual após a conclusão e estabilização do MVP.
-- [ ] Entender o papel de `CLAUDE.md` e de instruções persistentes.
-- [ ] Avaliar formas de organizar contexto, regras e convenções.
-- [ ] Registrar os benefícios e problemas efetivamente observados.
+### Resultado esperado
 
-**Resultado esperado:** um fluxo de uso da IA com contexto mais organizado e limites claros.
+Um diagnóstico do ambiente atual, contendo pontos fortes, limitações, oportunidades de melhoria e uma linha de base para avaliar a evolução.
+
+---
+
+## Etapa 1 — Context Engineering
+
+**Objetivo:** aprender a organizar e fornecer contexto relevante para que a IA compreenda melhor o projeto e execute tarefas com maior consistência.
+
+### Conceitos
+
+- Context Engineering.
+- Instruções persistentes.
+- Organização e recuperação de contexto.
+- Gerenciamento da janela de contexto.
+- Documentação modular.
+- Boas práticas de utilização do `CLAUDE.md`.
+
+### Atividades
+
+- [ ] Estudar os fundamentos de Context Engineering.
+- [ ] Investigar como o Claude utiliza o contexto do projeto.
+- [ ] Avaliar a organização atual das informações fornecidas à IA.
+- [ ] Planejar um `CLAUDE.md` como ponto de entrada para instruções persistentes.
+- [ ] Propor documentação modular para arquitetura, convenções, autorização e testes.
+- [ ] Validar manualmente as informações antes de transformá-las em instruções permanentes.
+- [ ] Implementar a estrutura aprovada em momento apropriado.
+- [ ] Avaliar os resultados em tarefas reais e comparar com o fluxo anterior.
+
+### Estrutura proposta para avaliação
+
+```text
+CLAUDE.md
+docs/
+└── ai/
+    ├── architecture.md
+    ├── conventions.md
+    ├── authorization.md
+    └── testing.md
+```
+
+Essa estrutura é uma proposta inicial, não uma decisão definitiva.
+
+### Claude Code
+
+A migração para Claude Code será avaliada após a conclusão e estabilização das atividades prioritárias do MVP.
+
+A migração não é um pré-requisito para estudar Context Engineering.
+
+### Resultado esperado
+
+Uma estratégia de gerenciamento de contexto validada, documentada e testada, capaz de reduzir instruções repetitivas e melhorar a consistência do trabalho com IA.
+
+---
 
 ## Etapa 2 — Skills e workflows reutilizáveis
 
-- [ ] Entender quando criar uma skill e quando usar instruções comuns.
-- [ ] Investigar fluxos de implementação, revisão e auditoria.
-- [ ] Definir pontos de validação e aprovação humana.
-- [ ] Registrar o que se mostrou reutilizável na prática.
+**Objetivo:** transformar processos repetitivos de desenvolvimento em fluxos estruturados, previsíveis e reutilizáveis.
 
-**Resultado esperado:** processos mais consistentes e fáceis de repetir.
+### Conceitos
 
-## Etapa 3 — Testes e automação
+- Skills.
+- Workflows.
+- Instruções reutilizáveis.
+- Separação de responsabilidades.
+- Revisão humana.
+- Padronização de processos.
 
-- [ ] Revisar a estratégia atual de testes manuais.
-- [ ] Estudar a integração de testes automatizados adequados ao projeto.
-- [ ] Explorar Playwright para cenários de interface quando pertinente.
-- [ ] Entender hooks e verificações automáticas com atenção à segurança.
-- [ ] Comparar os resultados com a linha de base.
+### Atividades
 
-**Resultado esperado:** mais confiança nas alterações e menos dependência de verificações exclusivamente manuais.
-
-## Etapa 4 — MCP e integração com ferramentas
-
-- [ ] Compreender o protocolo MCP e suas aplicações.
-- [ ] Identificar integrações que resolvam necessidades reais.
-- [ ] Avaliar permissões, privacidade e limites de acesso.
-- [ ] Documentar aprendizados de integrações efetivamente testadas.
-
-**Resultado esperado:** integrações úteis, justificadas e controladas.
-
-## Etapa 5 — Agentes e orquestração
-
-- [ ] Estudar agentes, tool calling e workflows multi-etapas.
-- [ ] Comparar automações determinísticas com abordagens mais autônomas.
-- [ ] Investigar tarefas que se beneficiariam de agentes especializados.
-- [ ] Avaliar observabilidade, custos, falhas e supervisão humana.
-
-**Resultado esperado:** entender quando a autonomia ajuda e quando acrescenta complexidade desnecessária.
-
-## Etapa 6 — RAG e evolução contínua (se necessário)
-
-- [ ] Avaliar se a documentação e o volume de contexto justificam recuperação de informação.
-- [ ] Estudar embeddings, busca e RAG caso exista uma necessidade concreta.
-- [ ] Revisitar decisões anteriores e sintetizar os aprendizados.
-- [ ] Atualizar o roadmap a partir dos resultados reais.
-
-**Resultado esperado:** evolução orientada por problemas, sem adotar tecnologias apenas por tendência.
-
-## Princípios da jornada
-
-1. Aprender fazendo, mas compreender antes de automatizar.
-2. Priorizar a estabilidade e a segurança do ambiente profissional.
-3. Distinguir planos, hipóteses, testes e resultados.
-4. Documentar dificuldades e decisões, não apenas sucessos.
-5. Nunca publicar informações confidenciais ou código proprietário.
-
-> Este roadmap é um plano inicial. Marcar uma tarefa como concluída exige que ela tenha sido efetivamente realizada.
+- [ ] Estudar o funcionamento de skills e workflows.
+- [ ] Mapear o processo atual de implementação de funcionalidades.
+- [ ] Estruturar um workflow de implementação.
+- [ ] Estruturar um workflow de auditoria por perfil de usuário.
+- [ ] Criar uma estratégia de revisão de código e diffs.
+- [ ] Definir pontos de aprovação humana.
+- [ ] Experiment
