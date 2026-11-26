@@ -33,15 +33,15 @@ Quero evoluir esse processo de maneira incremental, sem comprometer a estabilida
 
 ## Como acompanhar
 
-- [Roadmap](ROADMAP.md): plano de evolução, sujeito a revisões.
-- [Diário de aprendizado](journal/README.md): índice dos registros publicados.
+- [Roadmap](docs/aprendizado/ROADMAP.md): plano de evolução e etapa atual, sujeito a revisões.
+- [Estado de aprendizado](docs/aprendizado/ESTADO_APRENDIZADO.md): o que já foi compreendido e aplicado, com as evidências.
+- [Diário](docs/aprendizado/DIARIO.md): histórico cronológico da jornada.
 
 Os registros serão feitos após sessões ou marcos relevantes, sem obrigação de publicar diariamente. Cada entrada deve deixar claro o que foi efetivamente realizado e o que ainda é apenas uma hipótese ou intenção.
-
 ## Escopo e privacidade
 
 Este repositório é pessoal e público. O ambiente profissional é uma fonte de problemas e aprendizados, **não de código ou dados para publicação**. Não serão incluídos segredos, informações de clientes, código proprietário, capturas internas nem detalhes sensíveis. Exemplos futuros serão independentes e fictícios, quando necessários, e sua publicação deverá respeitar as regras da empresa.
 
 ## Status
 
-**Em planejamento.** O roadmap está definido como direção inicial; as etapas ainda não representam implementações concluídas.
+**Etapa 1 — Context Engineering, em andamento.** A Etapa 0 (diagnóstico) foi concluída. Detalhes no [roadmap](docs/aprendizado/ROADMAP.md).
